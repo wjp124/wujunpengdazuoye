@@ -1,0 +1,95 @@
+<div class="demo"></div>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm bg-whait">
+  <h5 class="my-0 mr-md-auto font-weight-normal">浙江机电职业技术学院</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="{{menu.url}}" *ngFor="let menu of menus">{{menu.name}}</a>
+
+  </nav>
+  <a class="btn btn-outline-primary" [routerLink]="['/login']">登录</a>
+</div>
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Pricing</h1>
+</div>
+
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm" *ngFor='let product of products; let i =index'>
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">{{product.category}}</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">${{product.pricing.price}}<small class="text-muted">/
+            {{product.pricing.unit}}</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li *ngFor='let feature of product.features'>{{feature}}</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-primary">{{product.action}}</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <small class="d-block mb-3 text-muted">© 2020-2030</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Cool stuff</a></li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Random feature</a></li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Team feature</a></li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Stuff for developers</a>
+          </li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Another one</a></li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Resource</a></li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Resource name</a></li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Another resource</a></li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Team</a></li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Locations</a></li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Privacy</a></li>
+          <li><a class="text-muted" href="https://v4.bootcss.com/docs/examples/pricing/#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr">
+  <div style="padding: 8px;">
+    <div>
+  </div>
+  <div class="top" style="padding: 8px; float: left; width: 100%;">
+    
+  </div>
+  <div class="middle" style="padding: 8px;">
+    <div class="original-text"></div>
+  </div>
+  <div class="bottom" style="padding: 8px;">
+    <div class="started-activity-container">
+      <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
+      <div class="activity-root"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="goog-te-spinner-pos">
+  <div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px"
+      height="96px" viewBox="0 0 66 66">
+      <circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+      </circle>
+    </svg></div>
+</div>
